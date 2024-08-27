@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   protect-branch:
@@ -26,3 +27,4 @@ jobs:
             },
             "restrictions": null
           }'
+          echo "ran"
